@@ -15,36 +15,7 @@
 	"author": "slith",
 	"license": "MIT",
 	"config": {
-		"forge": {
-			"make_targets": {
-				"win32": [
-					"squirrel"
-				],
-				"darwin": [
-					"zip"
-				],
-				"linux": [
-					"deb",
-					"rpm"
-				]
-			},
-			"electronPackagerConfig": {
-				"packageManager": "yarn"
-			},
-			"electronWinstallerConfig": {
-				"name": "app"
-			},
-			"electronInstallerDebian": {},
-			"electronInstallerRedhat": {},
-			"github_repository": {
-				"owner": "",
-				"name": ""
-			},
-			"windowsStoreConfig": {
-				"packageName": "",
-				"name": "app"
-			}
-		}
+		"forge": "./forge.js"
 	},
 	"dependencies": {
 		"electron-compile": "^6.4.4",

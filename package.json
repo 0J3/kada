@@ -10,5 +10,8 @@
 		"make": "cd app && electron-forge make && cd ..",
 		"publish": "cd app && electron-forge publish && cd ..",
 		"lint": "cd app && eslint src --color && cd .."
+	},
+	"config": {
+		"forge": "app/forge.js"
 	}
 }

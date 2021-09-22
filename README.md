@@ -10,7 +10,13 @@ This attempts to solve that by playing [an audio file with noise at close-to-0db
 
 ## Installation
 
-Head to the releases tab, and fetch yourself the latest portable EXE. Place that in your autorun/desktop/wherever, and it will start this minimal Electron application on system start.
+### Windows
+
+Head to the releases tab, and fetch yourself the latest installer EXE.
+
+### Linux
+
+build it yourself i guess - i dont have the issue described earlier on linux so yeah
 
 ## Usage
 
