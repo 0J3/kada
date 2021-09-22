@@ -4,14 +4,11 @@
 	"main": "electron/main.js",
 	"author": "0J3 <git@wafflepowered.com>",
 	"license": "MIT",
-	"dependencies": {},
-	"devDependencies": {
-		"@types/electron": "^1.6.10",
-		"electron": "^15.0.0"
-	},
 	"scripts": {
-		"start": "electron-forge start",
-		"package": "electron-forge package",
-		"make": "electron-forge make"
+		"start": "cd app && electron-forge start && cd ..",
+		"package": "cd app && electron-forge package && cd ..",
+		"make": "cd app && electron-forge make && cd ..",
+		"publish": "cd app && electron-forge publish && cd ..",
+		"lint": "cd app && eslint src --color && cd .."
 	}
 }
