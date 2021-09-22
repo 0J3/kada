@@ -1,5 +1,10 @@
 const path = require('path');
 const icon = path.resolve('icon', 'kadabig.ico');
+const squirrelConfig = {
+	iconUrl: icon,
+	setupIcon: icon,
+	copyright: 'Copyright (c) 2021 0J3. All Rights Reserved.',
+};
 module.exports = {
 	make_targets: {
 		win32: ['squirrel'],
@@ -11,7 +16,8 @@ module.exports = {
 		icon,
 	},
 	electronWinstallerConfig: {
-		name: 'app',
+		name: 'kada',
+		...squirrelConfig,
 	},
 	electronInstallerDebian: {},
 	electronInstallerRedhat: {},
@@ -20,8 +26,8 @@ module.exports = {
 		name: 'kada',
 	},
 	windowsStoreConfig: {
-		packageName: '',
-		name: 'app',
+		packageName: 'kada',
+		name: 'kada',
 	},
 	makers: [
 		{
@@ -33,11 +39,7 @@ module.exports = {
 		},
 		{
 			name: '@electron-forge/maker-squirrel',
-			config: {
-				iconUrl: icon,
-				setupIcon: icon,
-				copyright: '',
-			},
+			config: squirrelConfig,
 		},
 		{
 			name: '@electron-forge/maker-deb',

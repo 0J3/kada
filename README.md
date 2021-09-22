@@ -21,3 +21,9 @@ build it yourself i guess - i dont have the issue described earlier on linux so 
 ## Usage
 
 When running, if the audio is playing, it should (in theory) make your audio drivers stay "alive"/"active". To prevent this (and potentially save battery), just close the window or pause the audio.
+
+## Notice: Malwarebytes (and other antiviruses)
+
+If your antivirus detects this application (specifically it's `squirrel.exe` in the case of malwarebytes) as a virus, i have no clue why - read the source and build it for yourself if you're too paranoid to whitelist it.
+
+Or just don't run the application. I'm not forcing you to.
