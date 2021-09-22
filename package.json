@@ -1,11 +1,17 @@
 {
-  "name": "Kada",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "0J3 <git@wafflepowered.com>",
-  "license": "MIT",
-  "dependencies": {
-    "@types/electron": "^1.6.10",
-    "electron": "^15.0.0"
-  }
+	"name": "Kada",
+	"version": "1.0.0",
+	"main": "electron/main.js",
+	"author": "0J3 <git@wafflepowered.com>",
+	"license": "MIT",
+	"dependencies": {},
+	"devDependencies": {
+		"@types/electron": "^1.6.10",
+		"electron": "^15.0.0"
+	},
+	"scripts": {
+		"start": "electron-forge start",
+		"package": "electron-forge package",
+		"make": "electron-forge make"
+	}
 }
