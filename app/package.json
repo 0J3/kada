@@ -33,6 +33,6 @@
 		"eslint-plugin-jsx-a11y": "^5",
 		"eslint-plugin-react": "^7",
 		"@types/electron": "^1.6.10",
-		"electron": "^15.0.0"
+		"electron": "^13.6.6"
 	}
 }
